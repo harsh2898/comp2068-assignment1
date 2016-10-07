@@ -2,4 +2,41 @@
 
 <h1 class="text-center"><%= title %></h1>
 
+<style>
+    #googleMap {
+        width: 100%; /* Span the entire width of the screen */
+        height: 400px; /* Set the height to 400 pixels */
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); /* Change the color of the map to black and white */
+}
+</style>
+
+<div id="googleMap"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(44.3894, 79.6903);
+
+    function initialize() {
+        var mapProp = {
+            center:myCenter,
+            zoom:12,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+            position:myCenter,
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 <% include partials/footer.ejs %>
