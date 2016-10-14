@@ -1,8 +1,13 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F6482F;
 }
-
+.jumbotron {
+  background-color: #f4511e !important;
+  color: #fff !important;
+  padding: 100px 25px !important;
+  font-family: Montserrat, sans-serif !important;
+}
 a {
-  color: #00B7FF;
+  color: #F4511E ;
 }
