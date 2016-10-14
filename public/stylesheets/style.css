@@ -1068,7 +1068,7 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #ffbf00;
+    background: #15ceff;
     padding: 10px 50px;
     border-radius: 0;
     color: #fff;
@@ -1080,7 +1080,7 @@ textarea:focus {
 
 .btn-box:hover,
 .btn-box:focus {
-    background: #F5B700;
+    background: #178dff;
     color: #fff;
 }
 
